@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DXK Games – Mobile Game Development Studio</title>
+    <meta
+      name="description"
+      content="DXK Games is an independent mobile game development studio creating engaging games like City Runner."
+    />
+    <meta
+      name="keywords"
+      content="DXK Games, City Runner, mobile games, endless runner, indie games"
+    />
+    <!-- FIX: Favicon added (peer review improvement) -->
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="index 1.css" />
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="dklog">
+          <img src="Images/dxk g.png" alt="DXK Games logo" width="100" height="80" />
+        </div>
+        <div class="logo">DXK</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" onclick="showPage('home')">HOME</a></li>
+          <li><a href="#" onclick="showPage('about')">ABOUT</a></li>
+          <!-- FIX: Renamed from "GAMES" to "CITY RUNNER" (peer review improvement - Damian's feedback) -->
+          <li><a href="#" onclick="showPage('city-runner')">CITY RUNNER</a></li>
+          <li><a href="#" onclick="showPage('partnership')">PARTNERSHIP</a></li>
+          <li><a href="#" onclick="showPage('beta-key')">BETA KEY</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════
+         HOME PAGE
+    ═══════════════════════════════════════════════════ -->
+    <div id="home" class="page-section active">
+
+      <div class="hero">
+        <h1>DXK Games</h1>
+        <p>
+          Independent mobile game development studio creating engaging,
+          fast-paced gaming experiences.
+        </p>
+        <button class="cta-button" onclick="showPage('city-runner')">
+          Explore City Runner
+        </button>
+
+        <!-- FIX 1: Scroll indicator arrow added after user testing showed
+             2 out of 5 users stopped scrolling before reaching the social
+             media section. The bouncing arrow signals that more content
+             is below the visible screen. -->
+        <div class="scroll-indicator" aria-label="Scroll down for more content">
+          <span class="scroll-arrow">&#9660;</span>
+          <p class="scroll-text">Scroll to explore</p>
+        </div>
+      </div>
+
+      <!-- FIX: Content tiles enlarged and descriptions added
+           (peer review improvement - Toluwanimi's feedback) -->
+      <div class="tiles">
+        <div class="tile">
+          <h2>About DXK Games</h2>
+          <p>
+            We are an independent mobile game development studio founded to create
+            high-quality, accessible games that bring joy to casual players worldwide.
+            Discover our story, our values and our vision.
+          </p>
+          <a href="#" class="tile-link" onclick="showPage('about')">Learn More →</a>
+        </div>
+        <div class="tile">
+          <h2>City Runner</h2>
+          <p>
+            Our debut game: a 2D endless runner where you navigate city streets,
+            avoid obstacles and collect coins. Fast-paced, competitive and built
+            for mobile. See screenshots and request beta access.
+          </p>
+          <a href="#" class="tile-link" onclick="showPage('city-runner')">View Game →</a>
+        </div>
+        <div class="tile">
+          <h2>Get Beta Access</h2>
+          <p>
+            Be among the first to play City Runner before its official release.
+            Fill in our short form to request your beta key. Selected applicants
+            are contacted within 7 working days.
+          </p>
+          <a href="#" class="tile-link" onclick="showPage('beta-key')">Request Access →</a>
+        </div>
+      </div>
+
+      <!-- FIX 4: Social media section enlarged and heading updated
+           (test plan fix - qualitative feedback said section could be more prominent) -->
+      <div class="social-showcase">
+        <h3 class="social-heading">Follow the DXK Games Journey On Social Media</h3>
+        <p class="social-subheading">
+          Stay up to date with City Runner development, behind-the-scenes content
+          and community highlights.
+        </p>
+        <div class="social-grid">
+          <div class="social-card">
+            <img class="social-card-image" src="Images/gameplay1.png" alt="City Runner gameplay screenshot showing fast-paced obstacle avoidance" />
+            <div class="social-card-text">
+              Check out the latest gameplay mechanics from City Runner.
+              Fast-paced action and engaging challenges await!
+            </div>
+            <div class="social-card-date">May 8, 2026</div>
+          </div>
+          <div class="social-card">
+            <img class="social-card-image" src="Images/IMG_2137.JPG" alt="The DXK Games development team" />
+            <div class="social-card-text">
+              Meet the DXK Games team! We are passionate developers creating the
+              next generation of mobile gaming experiences.
+            </div>
+            <div class="social-card-date">May 5, 2026</div>
+          </div>
+          <div class="social-card">
+            <img class="social-card-image" src="Images/thumbnail.png" alt="City Runner beta launch announcement" />
+            <div class="social-card-text">
+              City Runner beta is now available! Download on iOS and Android.
+              Your feedback shapes the final game.
+            </div>
+            <div class="social-card-date">May 1, 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         ABOUT PAGE
+    ═══════════════════════════════════════════════════ -->
+    <div id="about" class="page-section">
+      <h1 class="section-title">About DXK Games</h1>
+      <div class="section-text">
+        <p>
+          DXK Games is an independent mobile game development studio founded
+          with a mission to create engaging, innovative games that bring joy to
+          players worldwide. We specialise in fast-paced, casual gaming
+          experiences designed for mobile devices, prioritising accessibility,
+          visual appeal and addictive gameplay mechanics.
+        </p>
+        <p style="margin-top: 20px">
+          Our core values are centred on creativity, player satisfaction and
+          technical excellence. We believe that the best games are those that
+          respect the player's time whilst delivering maximum engagement and
+          fun. Every aspect of our games is crafted with care, from the initial
+          design concept through to post-launch support.
+        </p>
+        <p style="margin-top: 20px">
+          The DXK Games team brings together passionate developers, designers
+          and game enthusiasts committed to pushing the boundaries of mobile
+          gaming and establishing DXK Games as a leading studio in the UK
+          gaming industry.
+        </p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         CITY RUNNER PAGE
+    ═══════════════════════════════════════════════════ -->
+    <div id="city-runner" class="page-section">
+      <h1 class="section-title">City Runner</h1>
+      <div class="section-text">
+        <p>
+          City Runner is a 2D arcade-style endless runner that challenges
+          players to navigate through a vibrant city environment whilst avoiding
+          obstacles and collecting coins. The game combines simple controls with
+          intense, fast-paced action to create an addictive gaming experience.
+        </p>
+        <p style="margin-top: 20px">
+          <strong>Core Gameplay:</strong> Players control a character running
+          through city streets, swiping left and right to avoid obstacles and
+          collecting golden coins to build their high score. The game features
+          progressive difficulty, leaderboards and unlockable cosmetic items.
+        </p>
+        <p style="margin-top: 20px">
+          <strong>Target Audience:</strong> City Runner is designed for casual
+          mobile gamers aged 13-30 who enjoy quick, engaging play sessions and
+          competitive scoring.
+        </p>
+        <p style="margin-top: 20px">
+          <strong>Platforms:</strong> Available on iOS and Android. Optimised
+          for mobile devices with support for both phones and tablets.
+        </p>
+      </div>
+
+      <!-- FIX 2: Release status section added.
+           User testing (1-2-1 interview + questionnaire) revealed that users
+           did not know when City Runner would be available to download.
+           This section directly addresses that gap identified in the test plan. -->
+      <div class="release-status">
+        <div class="release-badge">BETA NOW AVAILABLE</div>
+        <h2 class="release-title">When Can I Play City Runner?</h2>
+        <p class="release-text">
+          City Runner is currently in active beta development. Beta testers have
+          access to the full core gameplay experience and their feedback is
+          directly shaping the final release. The confirmed launch date will be
+          announced across the DXK Games social media channels — follow us to
+          be the first to know.
+        </p>
+        <p class="release-text" style="margin-top: 12px;">
+          Want early access right now? Request your beta key using the button
+          below and you will be contacted within 7 working days with download
+          instructions.
+        </p>
+      </div>
+
+      <h2 style="margin-top: 40px; margin-bottom: 20px; color: #3b82f6; font-size: 20px;">
+        Screenshots
+      </h2>
+      <!-- FIX: Screenshot gallery expanded to 4 images
+           (peer review improvement - Toluwanimi suggested more visual content) -->
+      <div class="gallery">
+        <div class="gallery-item" onclick="openLightbox('img1')">
+          <img id="img1" src="images/mmenu.png" alt="City Runner main menu screen" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox('img2')">
+          <img id="img2" src="images/gameplay3.png" alt="City Runner gameplay - city environment" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox('img3')">
+          <img id="img3" src="images/gameplay2.png" alt="City Runner gameplay - obstacle avoidance" />
+        </div>
+        <div class="gallery-item" onclick="openLightbox('img4')">
+          <img id="img4" src="images/gameplay1.png" alt="City Runner gameplay - coin collection" />
+        </div>
+      </div>
+
+      <button
+        class="cta-button"
+        style="margin-top: 30px"
+        onclick="showPage('beta-key')"
+      >
+        Request Beta Access
+      </button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         PARTNERSHIP PAGE
+    ═══════════════════════════════════════════════════ -->
+    <div id="partnership" class="page-section">
+      <h1 class="section-title">British Esports Federation Partnership</h1>
+      <div class="section-text">
+        <p>
+          DXK Games is proud to partner with the British Esports Federation, a
+          leading organisation dedicated to promoting and supporting competitive
+          gaming in the United Kingdom. This partnership represents our
+          commitment to the esports ecosystem and our ambition to position City
+          Runner within the competitive gaming community.
+        </p>
+        <p style="margin-top: 20px">
+          <strong>What This Means:</strong> The partnership with the British
+          Esports Federation provides City Runner with access to a community of
+          engaged gamers, competitive tournament opportunities, and alignment
+          with industry-leading practices in esports development and support.
+        </p>
+        <p style="margin-top: 20px">
+          <strong>Supporting UK Gaming:</strong> By working with the British
+          Esports Federation, DXK Games is contributing to the growth and
+          development of the UK gaming and esports industry, helping to
+          establish the UK as a global leader in competitive gaming.
+        </p>
+        <p style="margin-top: 20px">
+          For more information about the British Esports Federation, visit their
+          official website:
+        </p>
+        <p style="margin-top: 10px">
+          <!-- Security: rel="noopener noreferrer" prevents reverse tabnapping vulnerability -->
+          <a
+            href="https://www.britishesports.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #3b82f6; text-decoration: none; font-weight: bold"
+            >https://www.britishesports.org</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════
+         BETA KEY PAGE
+    ═══════════════════════════════════════════════════ -->
+    <div id="beta-key" class="page-section">
+      <h1 class="section-title">Request Beta Access</h1>
+      <div class="section-text">
+        <p>
+          Interested in playing City Runner before its official release? Fill in
+          the form below to request early access to our beta. Selected
+          applicants will be contacted via email within 7 working days with
+          their beta key and download instructions.
+        </p>
+      </div>
+
+      <div class="success-message" id="successMessage">
+        <strong>Thank you!</strong> Your beta key request has been received. You
+        will be contacted within 7 working days with your download link.
+      </div>
+
+      <!-- FIX: Form updated with character counter, GDPR consent checkbox
+           and response timeframe note (peer review improvement - Damian's feedback) -->
+      <form id="betaForm" style="max-width: 500px; margin: 30px auto">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error-message" id="nameError">
+            Please enter your full name
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-message" id="emailError">
+            Please enter a valid email address
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Why do you want to play City Runner? *</label>
+          <textarea id="reason" name="reason" maxlength="300" required></textarea>
+          <!-- FIX: Character counter added (peer review improvement - Damian's feedback) -->
+          <div class="char-count">
+            <span id="charCount">0</span> / 300 characters
+            (minimum 50)
+          </div>
+          <div class="error-message" id="reasonError">
+            Please tell us why you want to play (minimum 50 characters)
+          </div>
+        </div>
+
+        <!-- FIX: GDPR consent checkbox (legal requirement under UK GDPR) -->
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="consent" name="consent" required />
+            I consent to receive updates about City Runner and DXK Games
+          </label>
+          <div class="error-message" id="consentError">
+            Please agree to proceed
+          </div>
+        </div>
+
+        <button type="submit" class="cta-button" style="width: 100%">
+          Submit Beta Key Request
+        </button>
+
+        <!-- FIX: Response timeframe note added below submit button
+             (peer review improvement - Damian's feedback) -->
+        <p class="form-note">
+          Successful applicants will be contacted by email within 7 working days
+          with their beta key and download instructions.
+        </p>
+      </form>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" src="" alt="Enlarged screenshot" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#" onclick="showPage('about')">About</a>
+          <a href="#" onclick="showPage('city-runner')">City Runner</a>
+          <a href="#" onclick="showPage('partnership')">Partnership</a>
+          <!-- Security: rel="noopener noreferrer" on all external links -->
+          <a href="https://resilienceesports.co.uk" target="_blank" rel="noopener noreferrer">
+            Resilience Esports
+          </a>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 DXK Games. All rights reserved. |
+          <a href="#" style="color: #3b82f6; text-decoration: none">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index 1.js"></script>
+  </body>
+</html>
